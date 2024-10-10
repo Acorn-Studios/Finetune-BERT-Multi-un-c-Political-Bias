@@ -1,4 +1,5 @@
 print("Init...")
+import os
 import torch
 from transformers import BertTokenizer, BertForMaskedLM, Trainer, TrainingArguments
 from datasets import Dataset
