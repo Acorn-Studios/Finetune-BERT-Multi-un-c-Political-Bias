@@ -139,5 +139,5 @@ if __name__ == "__main__":
         print(f"Predicted text: {predicted_text}")
     except Exception as e:
         print("ERROR: " + e)
-        time.sleep(100)
+        sleep(100)
         input("Press Enter to continue...")
