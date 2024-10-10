@@ -11,14 +11,16 @@ BERT is trained on news headlines and articles from politically center, left, an
 | CNN  | Forbes    | Fox Bussiness |
 | Vox | Newsweek     | The American Conservative |
 | The New Yorker    | Marketwatch    | New York Post | 
+
 *[Source](https://www.allsides.com/media-bias/media-bias-chart)*
+
+<br>
 
 The models are then tested aginst eachother to see how their predictions compair. Take a look at the following example table:
 <br>
 | Input Text |
 | -------- |
 | The 2020 election was [MASK] |
-<br>
 
 Control Model | Left-Bias M.   | Center-B M. | Right-B M. |
 | -------- | ------- | -------- | -------- |
