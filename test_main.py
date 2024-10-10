@@ -2,6 +2,7 @@ import os
 import pytest
 from unittest.mock import patch, MagicMock
 import torch
+from main import *
 
 # Test loading datasets
 @patch("os.listdir")
