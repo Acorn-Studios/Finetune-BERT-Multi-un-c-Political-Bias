@@ -1,13 +1,11 @@
 print("Init...")
-import os
-os.system('pip install tensorflow torch transformers datasets sleep')
-os.system('pip show tensorflow torch transformers datasets sleep')
 import torch
 from transformers import BertTokenizer, BertForMaskedLM, Trainer, TrainingArguments
 from datasets import Dataset
 from torch.optim import AdamW  # PyTorch AdamW implementation
 from torch.utils.data import random_split
 from time import sleep
+import pytest
 
 print("Loading...")
 
