@@ -23,6 +23,7 @@ The models are then tested aginst eachother to see how their predictions compair
 Control Model | Left-Bias M.   | Center-B M. | Right-B M. |
 | -------- | ------- | -------- | -------- |
 | `;`  | `fair`  | `polarizing` |`rigged` |
+
 *This is example data and may not reflect the actual output of the models when prompted; these examples were created before final training
 
 ### Datasets
