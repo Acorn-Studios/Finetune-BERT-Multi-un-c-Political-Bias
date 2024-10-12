@@ -51,7 +51,7 @@ def tokenize_and_mask(examples, tokenizer):
     return tokenized_inputs
 
 # Fine-tune BERT models and save them
-def fine_tune_models(datasets, model_dir, only=None):
+def fine_tune_models(datasets, model_dir, only=None, save=True):
     print("Fine Tuning Model...")
     tokenizer = BertTokenizer.from_pretrained(MODEL_NAME)
 
@@ -99,8 +99,9 @@ def fine_tune_models(datasets, model_dir, only=None):
         trainer.train()
 
         # Save the model and tokenizer
-        model.save_pretrained(f"{model_dir}/{dataset_name}_model")
-        tokenizer.save_pretrained(f"{model_dir}/{dataset_name}_model")
+        if save == True:
+            model.save_pretrained(f"{model_dir}/{dataset_name}_model")
+            tokenizer.save_pretrained(f"{model_dir}/{dataset_name}_model")
 
 # Function to load a saved model and use it for inference
 def load_and_use_model(model_dir, model_name, input_text):
