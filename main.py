@@ -51,9 +51,13 @@ def tokenize_and_mask(examples, tokenizer):
     return tokenized_inputs
 
 # Fine-tune BERT models and save them
-def fine_tune_models(datasets, model_dir):
+def fine_tune_models(datasets, model_dir, only=None):
     print("Fine Tuning Model...")
     tokenizer = BertTokenizer.from_pretrained(MODEL_NAME)
+
+    #for testing script
+    if only != None:
+        datasets = only
     
     for dataset_name, samples in datasets.items():
         print(f"Training model on dataset: {dataset_name}")
