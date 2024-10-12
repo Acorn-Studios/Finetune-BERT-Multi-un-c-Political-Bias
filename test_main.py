@@ -13,7 +13,7 @@ def test_load_data():
 
 def test_finetune():
         # Step 2: Fine-tune models on each dataset
-        fine_tune_models(datasets, MODEL_DIR, only=["Center_Political_sample.txt"])
+        fine_tune_models(datasets, MODEL_DIR, only=["Center_Political_sample.txt"], save=False)
         print("test on mini-finetune complete")
 
 def test_run():
